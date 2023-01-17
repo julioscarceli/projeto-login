@@ -35,7 +35,7 @@ section#login {
 
     background-color: white;
     width: 250px;  /* tamanho da tela de celular (mobile first) */
-    height: 500px; /* tamanho da tela de celular (mobile first) */
+    height: 515px; /* tamanho da tela de celular (mobile first) */
     border-radius: 20px;  /* arredondar a borda */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.427);
 
@@ -65,3 +65,58 @@ div#formulario > h1 {
 div#formulario > p {
     font-size: 0.8em;
 }
+
+div.campo > label {
+    display: none;      /* Serviu para tirar login e senha escrito na tela */
+}
+
+form > div.campo {
+    background-color: #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+
+}
+
+form > input[type= submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;  /* largura total do container */
+    height: 40px;  
+    background-color: #49a09d;
+    color: white;
+    border: none;  /* tirar borda */
+    border-radius: 5px;
+    cursor: pointer;  /* quando passa o mouse encima muda o cursor */
+
+}
+
+form > input[type = submit]:hover {  /* hover passar o mouse encima muda de cor */
+    background-color: #284f4e;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 6px;
+    background-color: white;
+    color: #284f4e;
+    border: 1px solid #49a09d;
+    border-radius: 5px;
+    text-decoration: none;  /* tirar sublinhado do link */
+
+}
+
+form > a.botao:hover {
+    background-color: #5cddd8;
+}
+
+form > a.botao > i {
+    font-size: 0.8em;
+}
+
