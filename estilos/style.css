@@ -30,7 +30,6 @@ section#login {
     position: absolute;  /* centralizar no meio da tela */
     top: 50%;       /* centralizar no meio da tela */
     left: 50%;      /* centralizar no meio da tela */
-    transform: translate(-50%, -50%);   /* centralizar no meio da tela */
     overflow: hidden;       /* tudo que tiver fora da borda fica escondido */
 
     background-color: white;
@@ -39,13 +38,14 @@ section#login {
     border-radius: 20px;  /* arredondar a borda */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.427);
 
+    transform: translate(-50%, -50%);   /* centralizar no meio da tela */
     transition: width .3s , height .3s;
     transition-timing-function: ease;
 }
 
 section#login > div#imagem {
     display: block;
-   background: #5f2c82 url(../imagens/pexels-max-avans-5067320.jpg)no-repeat;
+   background: #5f2c82 url(../imagens/pexels-ricardo-cl-13369565.jpg)no-repeat;
     background-size: cover;
     background-position: center center;
     height: 220px;
@@ -66,19 +66,46 @@ div#formulario > p {
     font-size: 0.8em;
 }
 
+form > div.campo {
+    background-color: #5f2c82;
+    border: 1px solid #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+
+}
+
 div.campo > label {
     display: none;      /* Serviu para tirar login e senha escrito na tela */
 }
 
-form > div.campo {
-    background-color: #5f2c82;
-    display: block;
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    margin: 5px 0px;
+div.campo > i {
+    color: white;
+    
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #62e1dd;
+    font-size: 1em;
+    width: calc(100% - 45px);  /* para encaixar os campos de login */
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    transform: translateY(-10px);
+    
 
 }
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+
 
 form > input[type= submit] {
     display: block;
